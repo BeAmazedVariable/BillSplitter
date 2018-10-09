@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bill Splitter</string>
+    <string name="Description">Image of a bill</string>
+    <string name="btnBill">Move to split bill activity</string>
+    <string name="txtBill">Enter Your Bill</string>
+    <string name="txtPeople">"Number of people "</string>
+    <string name="btnSplit">Split the bill</string>
+    <string name="txtConclusion">Here is your bill and tip for each person:</string>
+</resources>
