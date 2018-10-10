@@ -20,7 +20,7 @@ public class SplitBill extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_split_bill);
 
-        //Initiate instance of an object
+        //Initiate instance of an object of the layout file
         final EditText bill=findViewById(R.id.txtBill);
         final EditText people=findViewById(R.id.txtPeople);
         final Spinner satisfaction=findViewById(R.id.spnTip);
@@ -29,7 +29,7 @@ public class SplitBill extends AppCompatActivity
         final TextView tipResult= findViewById(R.id.txtTipResult);
         final TextView totalResult= findViewById(R.id.txtTotal);
 
-        //Make actions when the user click the button
+        //Make actions when the user clicks the button
         btnSplit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
