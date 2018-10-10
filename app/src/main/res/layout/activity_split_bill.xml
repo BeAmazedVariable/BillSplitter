@@ -15,6 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="17dp"
         android:ems="10"
+        android:gravity="center_horizontal"
         android:hint="@string/txtBill"
         android:inputType="numberDecimal" />
 
@@ -26,6 +27,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="83dp"
         android:ems="10"
+        android:gravity="center_horizontal"
         android:hint="@string/txtPeople"
         android:inputType="number" />
 

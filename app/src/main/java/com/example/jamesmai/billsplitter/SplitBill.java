@@ -20,6 +20,11 @@ public class SplitBill extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_split_bill);
 
+        //Display the Action Bar Icon
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         //Initiate instance of an object of the layout file
         final EditText bill=findViewById(R.id.txtBill);
         final EditText people=findViewById(R.id.txtPeople);

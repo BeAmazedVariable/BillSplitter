@@ -15,6 +15,12 @@ public class WelcomeScreen extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
+
+        //Display the Action Bar Icon
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         //Initiate instance of an object
         ImageButton move = findViewById(R.id.btnBill);
 
