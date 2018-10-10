@@ -11,12 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/txtPeople"
+        android:layout_alignLeft="@+id/txtPeople"
         android:layout_alignParentTop="true"
         android:layout_marginTop="17dp"
         android:ems="10"
         android:hint="@string/txtBill"
-        android:inputType="numberDecimal"
-        android:layout_alignLeft="@+id/txtPeople" />
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/txtPeople"

@@ -54,7 +54,7 @@ public class SplitBill extends AppCompatActivity
                 //Declare an output format for the output
                 DecimalFormat currency = new DecimalFormat("$###,###.##");
 
-                //Decision making statement decides which tip wage should be use
+                //Decision making statements decide which tip wage should be use
                 switch(satisfactionChoice)
                 {
                     case 0:
