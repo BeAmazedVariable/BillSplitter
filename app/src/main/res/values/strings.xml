@@ -5,5 +5,11 @@
     <string name="txtBill">Enter Your Bill</string>
     <string name="txtPeople">"Number of people "</string>
     <string name="btnSplit">Split the bill</string>
-    <string name="txtConclusion">Here is your bill and tip for each person:</string>
+    <string name="prompt">How are our services ?</string>
+    <string-array name="txtSatisfaction">
+        <item>Excellent(15%)</item>
+        <item>Average(10%)</item>
+        <item>Poor(5%)</item>
+    </string-array>
+
 </resources>
