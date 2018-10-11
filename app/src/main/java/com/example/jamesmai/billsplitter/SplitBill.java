@@ -33,6 +33,7 @@ public class SplitBill extends AppCompatActivity
         final TextView billResult= findViewById(R.id.txtBillResult);
         final TextView tipResult= findViewById(R.id.txtTipResult);
         final TextView totalResult= findViewById(R.id.txtTotal);
+        final TextView givingThanks= findViewById(R.id.txtBye);
 
         //Make actions when the user clicks the button
         btnSplit.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +83,7 @@ public class SplitBill extends AppCompatActivity
                 billResult.setText("Bill for each person is " + currency.format(billForEach));
                 tipResult.setText("Tip for each person is " + currency.format(tipForEach));
                 totalResult.setText("Bill for each person is " + currency.format(total));
+                givingThanks.setText("Thanks you ! Hope to serve you again soon !");
             }
         });
     }
