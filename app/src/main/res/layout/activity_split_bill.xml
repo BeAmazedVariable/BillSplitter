@@ -17,7 +17,10 @@
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="@string/txtBill"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+        android:drawableStart="@drawable/ic_attach_money_black_24dp"
+        />
 
     <EditText
         android:id="@+id/txtPeople"
@@ -29,7 +32,10 @@
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="@string/txtPeople"
-        android:inputType="number" />
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_people_black_24dp"
+        android:drawableStart="@drawable/ic_people_black_24dp"
+        />
 
     <Spinner
         android:id="@+id/spnTip"
