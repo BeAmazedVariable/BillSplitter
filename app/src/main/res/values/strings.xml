@@ -11,5 +11,9 @@
         <item>Average(10%)</item>
         <item>Poor(5%)</item>
     </string-array>
+    <string name="txtBillEach">Bill for each person is</string>
+    <string name="txtTipEach">Tip for each person is</string>
+    <string name="txtTotal">Total bill for each person is</string>
+    <string name="txtThanks">Thanks you ! Hope to serve you again soon !</string>
 
 </resources>

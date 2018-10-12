@@ -39,18 +39,16 @@ public class SplitBill extends AppCompatActivity
         btnSplit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Declare constant variable which decide the tip appropriate with the restaurant services
-                final double excellentTip = 0.15;
-                final double averageTip = 0.10;
-                final double poorTip = 0.05;
-                //Declare variable to collect the total bill, tip for calculate and variables to indicate the bill and tip for each person
-                double mealBill;
-                int peopleInGroup;
-                int satisfactionChoice;
-                double billForEach;
-                double tipForEach;
-                double total;
-                double tip = 0;
+                //Tip percentages for each quality of service option
+                final double[] tip = {0.15, 0.10, 0.5};
+
+                double mealBill;            //Collect the total meal's bill
+                int peopleInGroup;          //Collect the number of people in the group
+                int satisfactionChoice;     //Decide how much satisfy the customer is with our service
+                double billForEach;         //Bill that each person has to pay
+                double tipForEach;          //Tip that each person has to pay
+                double total;               //Total amount of money that each person has to pay
+                double tipPercent;          //Tip percent
 
                 //Collect the user input include: the total bill, number of peoples in a group and the user choice for tip
                 mealBill = Double.parseDouble(bill.getText().toString());
@@ -60,30 +58,19 @@ public class SplitBill extends AppCompatActivity
                 //Declare an output format for the output
                 DecimalFormat currency = new DecimalFormat("$###,###.##");
 
-                //Decision making statements decide which tip wage should be use
-                switch(satisfactionChoice)
-                {
-                    case 0:
-                        tip = excellentTip;
-                        break;
-                    case 1:
-                        tip = averageTip;
-                        break;
-                    case 2:
-                        tip = poorTip;
-                        break;
-                }
+                //Decide tip percent appropriate with the quality of service
+                tipPercent = tip[satisfactionChoice];
 
                 //Calculate the bill and tip for each person and the total bill
                 billForEach = mealBill / peopleInGroup;
-                tipForEach = tip * billForEach;
+                tipForEach = tipPercent * billForEach;
                 total = tipForEach + billForEach;
 
                 //Indicate the result for bill, tip and total bill for each person
                 billResult.setText("Bill for each person is " + currency.format(billForEach));
                 tipResult.setText("Tip for each person is " + currency.format(tipForEach));
-                totalResult.setText("Bill for each person is " + currency.format(total));
-                givingThanks.setText("Thanks you ! Hope to serve you again soon !");
+                totalResult.setText("Total bill for each person is " + currency.format(total));
+                givingThanks.setText(R.string.txtThanks);
             }
         });
     }

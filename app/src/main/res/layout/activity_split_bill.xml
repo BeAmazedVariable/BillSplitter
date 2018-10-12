@@ -15,13 +15,14 @@
         android:layout_alignLeft="@+id/txtPeople"
         android:layout_alignParentTop="true"
         android:layout_marginTop="17dp"
+        android:drawableStart="@drawable/ic_attach_money_black_24dp"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="@string/txtBill"
         android:inputType="numberDecimal"
-        android:drawableLeft="@drawable/ic_attach_money_black_24dp"
-        android:drawableStart="@drawable/ic_attach_money_black_24dp"
-        />
+        android:typeface="sans"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/txtPeople"
@@ -36,7 +37,7 @@
         android:inputType="number"
         android:drawableLeft="@drawable/ic_people_black_24dp"
         android:drawableStart="@drawable/ic_people_black_24dp"
-        />
+        android:importantForAutofill="no" />
 
     <Spinner
         android:id="@+id/spnTip"
@@ -59,7 +60,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="188dp" />
+        android:layout_marginBottom="188dp"
+        android:textSize="18sp"
+        app:fontFamily="sans-serif" />
 
     <TextView
         android:id="@+id/txtTipResult"
@@ -67,7 +70,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="151dp" />
+        android:layout_marginBottom="151dp"
+        android:textSize="18sp"
+        app:fontFamily="sans-serif" />
 
     <Button
         android:id="@+id/btnSplit"
@@ -84,7 +89,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="110dp" />
+        android:layout_marginBottom="110dp"
+        android:textSize="18sp"
+        app:fontFamily="sans-serif" />
 
     <TextView
         android:id="@+id/txtBye"
